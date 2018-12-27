@@ -9,6 +9,15 @@ HTTP Man In The Middle (MITM) Proxy written in node.js based on Joe Ferner's wor
 ## Typescript
 type definitions are now included in this project, no extra steps required.
 
+# Enhanced
+1、ctx has an member connectSocket:
+when https tunnel create by function makeConnection, it stores inside
+eg: 
+//get client ip
+ctx.connectSocket.remoteAddress
+
+etc...
+
 # Example
 
 This example will modify any search results coming from google and replace all the result titles with "Pwned!".

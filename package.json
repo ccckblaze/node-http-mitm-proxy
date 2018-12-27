@@ -1,6 +1,6 @@
 {
   "name": "http-mitm-proxy-adv",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "HTTP Man In The Middle (MITM) Proxy Adv",
   "main": "index.js",
   "types": "index.d.ts",
@@ -24,9 +24,9 @@
   ],
   "author": "ccckblaze <ccckblaze@sina.com>",
   "contributors": [
-	"Joe Ferner <joe@fernsroth.com>"
+    "Joe Ferner <joe@fernsroth.com>",
     "Félicien François <felicien@tweakstyle.com>",
-    "Simon Pratt <simon@pr4tt.com>",
+    "Simon Pratt <simon@pr4tt.com>"
   ],
   "license": "MIT",
   "devDependencies": {
