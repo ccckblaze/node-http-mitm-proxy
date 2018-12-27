@@ -1,14 +1,10 @@
-# HTTP MITM Proxy
+# HTTP MITM Proxy Adv
 
-HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
-
-[![](https://david-dm.org/joeferner/node-http-mitm-proxy.svg)](https://david-dm.org/joeferner/node-http-mitm-proxy)
-[![Build Status](https://travis-ci.org/joeferner/node-http-mitm-proxy.svg?branch=master)](https://travis-ci.org/joeferner/node-http-mitm-proxy)
-
+HTTP Man In The Middle (MITM) Proxy written in node.js based on Joe Ferner's work. Supports capturing and modifying the request and response data.
 
 # Install
 
-`npm install --save http-mitm-proxy`
+`npm install --save http-mitm-proxy-adv`
 
 ## Typescript
 type definitions are now included in this project, no extra steps required.
@@ -18,7 +14,7 @@ type definitions are now included in this project, no extra steps required.
 This example will modify any search results coming from google and replace all the result titles with "Pwned!".
 
 ```javascript
-var Proxy = require('http-mitm-proxy');
+var Proxy = require('http-mitm-proxy-adv');
 var proxy = Proxy();
 
 proxy.onError(function(ctx, err) {
@@ -41,7 +37,7 @@ proxy.onRequest(function(ctx, callback) {
 proxy.listen({port: 8081});
 ```
 
-You can find more examples in the [examples directory](https://github.com/joeferner/node-http-mitm-proxy/tree/master/examples)
+You can find more examples in the [examples directory](https://github.com/ccckblaze/node-http-mitm-proxy-adv/tree/master/examples)
 
 # SSL
 
