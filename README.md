@@ -10,12 +10,13 @@ HTTP Man In The Middle (MITM) Proxy written in node.js based on Joe Ferner's wor
 type definitions are now included in this project, no extra steps required.
 
 # Enhanced
-1、ctx has an member connectSocket:
-when https tunnel create by function makeConnection, it stores inside
+1、ctx has an member connectSocket.
+when https tunnel create by function makeConnection, it stores inside.
 eg: 
+```javascript
 //get client ip
 ctx.connectSocket.remoteAddress
-
+```
 etc...
 
 # Example
